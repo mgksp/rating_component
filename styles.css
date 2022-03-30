@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-background: #141519;
+  --clr-dark: hsl(215, 22%, 15%);
+  --clr-medium: hsl(215, 22%, 25%);
+  --clr-light: hsl(215, 22%, 45%);
+  --clr-primary: #fc7612;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  background-color: var(--clr-background);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--clr-dark);
+  padding: 2.5rem;
+  border-radius: 2rem;
+}
+
+.card-icon {
+  color: var(--clr-primary);
+  background-color: var(--clr-medium);
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  color: rgb(227, 237, 253);
+}
+
+.card-description {
+  width: 45ch;
+  color: rgba(227, 237, 253, 0.6);
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.card-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-star {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--clr-medium);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.rating-star:hover {
+  background-color: var(--clr-light);
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: var(--clr-primary);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 1.4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: rgba(227, 237, 253, 0.9);
+  color: var(--clr-primary);
+}
+
+.submit-btn:active {
+  background-color: rgb(227, 237, 253);
+  color: var(--clr-primary);
+}
+
+.card-icon-big {
+  font-size: 8rem;
+  color: var(--clr-primary);
+  margin-bottom: 2rem;
+}
+
+.card-user-ratings {
+  color: var(--clr-primary);
+  font-size: 1.4rem;
+  background-color: var(--clr-medium);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.clr-primary {
+  color: var(--clr-primary);
+}
+
+@media (max-width: 414px) {
+  .card {
+    width: 98%;
+  }
+  .card-description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .rating-star {
+    width: 4rem;
+    height: 4rem;
+  }
+}
