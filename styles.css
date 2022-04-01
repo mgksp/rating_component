@@ -51,7 +51,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.card-title {
+.card-title > h1 {
   font-size: 2.4rem;
   margin-bottom: 1.5rem;
   color: rgb(227, 237, 253);
