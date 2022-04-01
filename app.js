@@ -7,6 +7,8 @@ const userRatings = document.querySelector(".card-user-ratings");
 
 const submitBtn = document.querySelector(".submit-btn");
 
+let isReviewed = false;
+
 function clearStars() {
   ratingStars.forEach((ratingStar, idx) => {
     ratingStar.textContent = idx + 1;
@@ -14,6 +16,7 @@ function clearStars() {
 }
 
 function applyStars(starCount) {
+  isReviewed = true;
   ratingStars.forEach((ratingStar, idx) => {
     if (idx > starCount) {
       return;
@@ -31,6 +34,8 @@ ratingStars.forEach((ratingStar, idx) => {
 });
 
 submitBtn.addEventListener("click", () => {
-  ratingCard.classList.add("hide");
-  thankYouCard.classList.remove("hide");
+  if (isReviewed) {
+    ratingCard.classList.add("hide");
+    thankYouCard.classList.remove("hide");
+  }
 });
