@@ -18,7 +18,7 @@
     <td>Desktop Version</td>
   </tr>
   <tr valign="top">
-    <td><img src="./screenshots/mobile.png" alt="mobile version" /></td>
-    <td><img src="./screenshots/desktop.png" alt="desktop version" /></td>
+    <td><img src="./screenshots/rating_component_mobile.png" alt="mobile version" /></td>
+    <td><img src="./screenshots/rating_component_desktop.png" alt="desktop version" /></td>
   </tr>
 </table>
