@@ -1,9 +1,24 @@
-# FEM - rating component
-### Links
-challenge from [FrontendMentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)\
-live site [here](https://mgksp.github.io/rating_component/)
+# FEM - Rating Component
+
+### links
+
+[Challenge From FrontendMentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)\
+[Live Site here](https://mgksp.github.io/rating_component/)
+
+### Built with
+
+- html
+- css
+
 ### Screenshots
-Mobile version \
-![mobile version](./screenshots/rating_component_mobile.png)\
-Desktop version \
-![desktop version](./screenshots/rating_component_desktop.png)
+
+<table>
+  <tr>
+    <td>Mobile Version</td>
+    <td>Desktop Version</td>
+  </tr>
+  <tr valign="top">
+    <td><img src="./screenshots/mobile.png" alt="mobile version" /></td>
+    <td><img src="./screenshots/desktop.png" alt="desktop version" /></td>
+  </tr>
+</table>
